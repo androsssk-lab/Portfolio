@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icons8-человек-24.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/search?q=home&ip=classic&s=solid">
+</head>
+<body>
+    
+    <section class="hero">
+        <header class="header">
+            <div class="header_container">
+                <nav class="header_nav">
+                    <ul class="header_nav_list">
+                        <li class="header_nav_item">
+                            <a href="#home">
+                                <img class="header_logo-home" src="images/Home-3--Streamline-Core-Remix.svg">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#about">
+                                <img class="header_logo-about" src="images/User-Identifier-Card--Streamline-Core.svg">
+                                Über mich
+                            </a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#service">
+                                <img class="header_logo-service" src="images/Desktop-Chat--Streamline-Core.svg">
+                                Service
+                            </a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="/">
+                                <img class="header_logo-projects" src="images/Lost-And-Found--Streamline-Core.svg">
+                                Projekte
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="hero_page" id="home">
+            <div class="hero_page-container">
+                <img class= "hero_img" src="images/ChatGPT Image 23. Feb. 2026, 19_25_21.png">
+                <div class="hero_content">
+                    <div class="hero_text">
+                        <h1 class="hero_title">
+                            Willkommen
+                        </h1>
+                        <span class="hero_typing" id="typing"></span>
+                        <p class="hero_desc">
+                            Ich bin ein angehender Webentwickler, der versucht, seine Ideen durch Programmierung und Design umzusetzen.
+                        </p>
+                    </div>
+                    <div class="hero_buttons">
+                        <button id="weiter-btn" class="hero_button1">
+                            Weiter
+                        </button>
+                        <a href="CV.pdf" download class="hero_button2" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                            CV Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about_container">
+            <div class="about_img-container">
+                <img class="about_img" src="images/about.jpg">
+            </div>
+            <div class="about_content">
+                <h2 class="about_title">
+                    Über mich<span class="about_title-dot">.</span>
+                </h2>
+                <div class="about_item">
+                    <h4 class="subtitle">
+                        | Andrej Pivtorak
+                    </h4>
+                    <p class="about_desc">
+                        Ich bin ein angehender Webentwickler, der versucht, seine Ideen durch Programmierung und Design umzusetzen.
+                    </p>
+                </div>
+                <div class="about_item">
+                    <h4 class="subtitle">
+                        | Bildung
+                    </h4>
+                    <p class="about_desc groß">
+                        College: 2020-2023
+                    </p>
+                    <p class="about_desc">
+                        Abschluss: Professional Junior Bachelor in Bussines, Trade and Exchange Activities
+                    </p>
+                    <p class="about_desc groß">
+                        Schule: 2011-2020
+                    </p>
+                    <p class="about_desc">
+                        Abschluss: Allgemeine Hochschulreife
+                    </p>
+                </div>
+                <div class="about_item">
+                    <h4 class="subtitle">
+                        | Tecnhische Fähigkeiten
+                    </h4>
+                    <div class="about_desc last">
+                        <p class="about_desc last_item">
+                        HTML
+                        </p>
+                        <p class="about_desc last_item">
+                            CSS
+                        </p>
+                        <p class="about_desc last_item">
+                            JavaScript
+                        </p>
+                        <p class="about_desc last_item">
+                            Figma
+                        </p>
+                        <p class="about_desc last_item">
+                            Microsoft Office Apps
+                        </p>
+                        <p class="about_desc last_item">
+                            React.js
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="service_container">
+            <div class="service_left">
+                <h2 class="service_title">
+                    Service<span class="about_title-dot">.</span>
+                </h2>
+                <div class="service_buttons">
+                    <button class="service_button 1 tab active" data-tab="design">
+                        Web-design
+                    </button>
+                    <button class="service_button 2 tab" data-tab="frontend">
+                        Frontend
+                    </button>
+                    <button class="service_button 3 tab" data-tab="backend">
+                        Backend
+                    </button>
+                    <button class="service_button 4 tab" data-tab="sprachen">
+                        Sprachen
+                    </button>
+                </div>
+            </div>
+            <div class="service_right">
+                
+                <div class="glass"></div>
+
+                <div class="icons active" id="design">
+                    <img src="images/icons/figma-icon.png" class="icon">
+                    <img src="images/icons/adobe-photoshop-icon.png" class="icon">
+                    <img src="images/icons/canva-icon.png" class="icon">
+                </div>
+
+                <div class="icons" id="frontend">
+                    <img src="images/icons/react-js-icon.png" class="icon">
+                    <img src="images/icons/html-icon.png" class="icon">
+                    <img src="images/icons/css-icon.png" class="icon">
+                </div>
+
+                <div class="icons" id="backend">
+                    <img src="images/icons/react-js-icon.png" class="icon">
+                    <img src="images/icons/node-js-black-icon.png" class="icon">
+                    <img src="images/icons/google-firebase-icon.png" class="icon">
+                </div>
+                <div class="icons" id="sprachen">
+                    <div class="languages">
+                        <h4 class="language_subtitle">
+                            | Languages
+                        </h4>
+
+                        <div class="language">
+                            <span>Deutsch</span>
+                            <div class="bar">
+                            <div class="progress" data-width= "90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="language">
+                            <span>Englisсh</span>
+                            <div class="bar">
+                            <div class="progress" data-width="45%"></div>
+                            </div>
+                        </div>
+
+                        <div class="language">
+                            <span>Russisch</span>
+                            <div class="bar">
+                            <div class="progress" data-width="99%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projekte" id="projekte">
+        <div class="projekte_container">
+            <h2 class="projekte_title">
+                Projekte<span class="about_title-dot">.</span>
+            </h2>
+            <div class="projekte_content">
+                <div class="projekt_card" id="card1">
+                    <div class="card_in">
+                        <div class="card_front" id="">
+                            <div class="card_container">
+                                <div class="card_image">
+                                    <img class="card_img" src="images/cards/pets.png">
+                                    <a class="link_img" href="https://androsssk-lab.github.io/Happy/#hero" target="_blank">Anschauen</a>
+                                    
+                                </div>
+                                <h3 class="card_title">
+                                    Happy Pet
+                                </h3>
+                                <p class="card_desc">
+                                    Eine moderne Website für ein Tierheim, die Informationen über die Tiere und die Möglichkeit zur Adoption bietet.
+                                </p>
+                                <div class="card_buttons">
+                                    <a class="weiter_btn">Weiter</a>
+                                    <button class="flip-btn">Flip</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back" id="">
+                            <div class="card_container_back">
+                                <h3 class="card_title">
+                                    Technologien:
+                                </h3>
+                                <ul class="card_list">
+                                    <li class="card_desc-back">
+                                        Animationen <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Adaptive Design <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Interaktive Elemente <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Funktionaler Warenkorb <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Grid Gallery <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                </ul>
+                                <div class="card_buttons">
+                                    <button class="flip-btn">
+                                    Flip 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projekt_card" id="card2">
+                    <div class="card_in">
+                        <div class="card_front" id="">
+                            <div class="card_container">
+                                <div class="card_image">
+                                    <img class="card_img" src="images/cards/portfolio.png">
+                                    <a class="link_img" href="https://androsssk-lab.github.io/Happy/#hero" target="_blank">Anschauen</a>
+                                    
+                                </div>
+                                <h3 class="card_title">
+                                    Website Portfolio
+                                </h3>
+                                <p class="card_desc">
+                                    Eine moderne Portfolio-Website, die meine Fähigkeiten und Projekte präsentiert.
+                                </p>
+                                <div class="card_buttons">
+                                    <a class="weiter_btn">Weiter</a>
+                                    <button class="flip-btn">Flip</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back" id="">
+                            <div class="card_container_back">
+                                <h3 class="card_title">
+                                    Technologien:
+                                </h3>
+                                <ul class="card_list">
+                                    <li class="card_desc-back">
+                                        Animationen <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Adaptive Design <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Interaktive Elemente <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                </ul>
+                                <div class="card_buttons">
+                                    <button class="flip-btn">
+                                    Flip
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projekt_card" id="card3">
+                    <div class="card_in">
+                        <div class="card_front" id="">
+                            <div class="card_container">
+                                <div class="card_image">
+                                    <img class="card_img" src="images/cards/telegram.png">
+                                    <a class="link_img" href="https://androsssk-lab.github.io/Happy/#hero" target="_blank">Anschauen</a>
+                                    
+                                </div>
+                                <h3 class="card_title">
+                                    Telegram Mini Apps
+                                </h3>
+                                <p class="card_desc">
+                                    Eine Sammlung von Mini-Apps, die in Telegram integriert sind
+                                </p>
+                                <div class="card_buttons">
+                                    <a class="weiter_btn">Weiter</a>
+                                    <button class="flip-btn">Flip</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back" id="">
+                            <div class="card_container_back">
+                                <h3 class="card_title">
+                                    Technologien:
+                                </h3>
+                                <ul class="card_list">
+                                    <li class="card_desc-back">
+                                        Firebase <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Animationen <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Adaptive Design <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                    <li class="card_desc-back">
+                                        Interaktive Elemente <img class="emoji_desc" src="images/emoji.png">
+                                    </li>
+                                </ul>
+                                <div class="card_buttons">
+                                    <button class="flip-btn">
+                                    Flip
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
