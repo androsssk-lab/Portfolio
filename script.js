@@ -59,6 +59,7 @@ tabs.forEach(tab => {
 
 const aboutSection = document.querySelector(".about");
 
+
 aboutSection.addEventListener("mousemove", (e) => {
   const rect = aboutSection.getBoundingClientRect();
 
@@ -99,3 +100,16 @@ document.querySelectorAll(".flip-btn").forEach(btn => {
   });
 });
 
+const aboutContainer = document.querySelector(".about_container")
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add("show")
+}
+})
+
+},{ threshold:0.3 })
+
+observer.observe(aboutContainer)
