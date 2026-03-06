@@ -207,7 +207,7 @@ a {
     background-color: #b923a7b9;
     color: #fff;
     transition: all 0.6s ease;
-    padding: 11px 21px;
+    padding: 15px 25px;
 }
 
 .about{
@@ -370,6 +370,7 @@ a {
 
   background-size: 200% 200%;
   animation: gradientMove 15s ease infinite;
+  overflow: hidden;
 }
 
 .service::before {
@@ -914,4 +915,134 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 480px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .hero_page-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero_img {
+        width: 300px;
+    }
+
+    .hero_content {
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero_text {
+        align-items: center;
+    }
+
+    .hero_desc{
+        font-size: 15px;
+    }
+
+    .hero_buttons {
+        gap: 20px;
+    }
+
+    .hero_button1, .hero_button2 {
+        font-size: 17px;
+        padding: 14px 20px;
+    }
+
+    .about_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about_img-container {
+        display: none;
+    }
+
+    .about {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .about::before {
+        content:
+        "ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH \A"
+        "ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH \A"
+        "ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH \A"
+        "ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH \A"
+        "ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH \A"
+        "ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH ÜBER MICH";
+    }
+
+    .about_content {
+        width: 80%;
+        background: none;
+        backdrop-filter: none;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+
+    .about_item {
+        align-items: center;
+        text-align: center;
+        background: #4a374a21;
+
+        padding: 20px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+    }
+
+    .service_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service_left {
+
+        align-items: center;
+    }
+
+    .service_buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 13px;
+    }
+
+    .projekte_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projekte_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .projekte_content::-webkit-scrollbar{
+    display:none;
+    }
+
+    .projekt_card{
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .card_front{
+        background: rgba(255, 255, 255, 0.1);
+    }
 }
