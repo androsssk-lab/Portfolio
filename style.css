@@ -75,7 +75,8 @@ body{
 .header_logo-service,
 .header_logo-projects {
     width: 20px;
-    height: 15px;    filter: brightness(0) invert(1);}
+    height: 15px;    filter: brightness(0) invert(1);
+}
 
 a {
     text-decoration: none;
@@ -924,6 +925,23 @@ a {
         overflow-x: hidden;
     }
     
+    .header {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .header_logo-home,
+    .header_logo-about,
+    .header_logo-service,
+    .header_logo-projects {
+        width: 30px;
+        height: 20px;    filter: brightness(0) invert(1);
+    }
+
+    .header_nav_item a {
+        font-size: 0;
+    }
+
     .hero_page-container {
         flex-direction: column;
         gap: 0;
@@ -945,7 +963,8 @@ a {
     }
 
     .hero_desc{
-        font-size: 15px;
+        padding: 0 20px;
+        font-size: 20px;
     }
 
     .hero_buttons {
