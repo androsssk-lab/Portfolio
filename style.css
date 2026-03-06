@@ -230,7 +230,9 @@ a {
 .hero_img,
 .hero_title,
 .hero_typing,
-.hero_desc{
+.hero_desc,
+.hero_button1,
+.hero_button2 {
     filter:blur(6px);
     opacity:0;
 }
@@ -252,14 +254,26 @@ a {
 .hero_typing{
     transform:translateY(30px);
     animation: heroText 0.8s ease forwards;
-    animation-delay:1.2s;
+    animation-delay:1s;
 }
 
 /* описание */
 .hero_desc{
     transform:translateY(30px);
     animation: heroText 0.8s ease forwards;
-    animation-delay:1.8s;
+    animation-delay:1.4s;
+}
+
+.hero_button1{
+    transform:translateY(30px);
+    animation: heroButtons 0.8s ease forwards;
+    animation-delay:2s;
+}
+
+.hero_button2{
+    transform:translateY(30px);
+    animation: heroButtons 0.8s ease forwards;
+    animation-delay:2.4s;
 }
 
 @keyframes heroImg{
@@ -271,6 +285,14 @@ a {
 }
 
 @keyframes heroText{
+    to{
+    opacity:1;
+    transform:translateY(0);
+    filter:blur(0);
+    }
+}
+
+@keyframes heroButtons{
     to{
     opacity:1;
     transform:translateY(0);
@@ -1000,14 +1022,48 @@ a {
 
 .weiter_btn:hover,
 .flip-btn:hover{
- transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .card_back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
+
+.projekte_title{
+    opacity:0;
+    transform:translateX(-80px);
+    transition:all 0.8s ease;
+}
+
+.projekt_card{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 0.7s ease;
+}
+
+.projekte_container.show .projekte_title{
+    opacity:1;
+    transform:translateX(0);
+}
+
+.projekte_container.show .projekt_card{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.projekte_container.show .projekt_card:nth-child(1){
+    transition-delay:0.4s;
+}
+
+.projekte_container.show .projekt_card:nth-child(2){
+    transition-delay:0.6s;
+}
+
+.projekte_container.show .projekt_card:nth-child(3){
+    transition-delay:0.8s;
+}   
 
 @media (max-width: 480px) {
     html, body {
@@ -1122,16 +1178,20 @@ a {
         transform:translateY(0);
     }
 
-    .about_container.show .about_item:nth-child(1){
-        transition-delay:0.4s;
-    }
-
-    .about_container.show .about_item:nth-child(2){
-        transition-delay:0.6s;
-    }
-
-    .about_container.show .about_item:nth-child(3){
+    .about_container.show .about_item:nth-of-type(1){
         transition-delay:0.8s;
+    }
+
+    .about_container.show .about_item:nth-of-type(2){
+        transition-delay:1s;
+    }
+
+    .about_container.show .about_item:nth-of-type(3){
+        transition-delay:1.2s;
+    }
+
+    .about_container.show .about_item:nth-of-type(4){
+        transition-delay:1.3s;
     }
 
 
