@@ -767,10 +767,11 @@ a {
   width: 260px;
   height: 430px;
   transition: transform .35s ease, box-shadow .35s ease;
+  perspective: 1000px;
   
 }
 
-.projekt_card:hover{
+/* .projekte_container.show .projekt_card:hover{
     transform:
     translateY(-12px)
     scale(1.03)
@@ -780,8 +781,9 @@ a {
     box-shadow:
     0 25px 60px rgba(0,0,0,0.5),
     0 0 40px rgba(124,58,237,0.25);
+    
 }
-
+ */
 .projekt_card::before{
     content:"";
     position:absolute;
@@ -809,6 +811,19 @@ a {
   position: relative;
   transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
   transform-style: preserve-3d;
+  border-radius: 22px;
+}
+
+.card_in:hover {
+  transform:
+    translateY(-12px)
+    scale(1.03)
+    rotateX(2deg)
+    rotateY(-2deg);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.55),
+    0 0 40px rgba(124,58,237,0.3);
 }
 
 .projekt_card.flipped .card_in {
@@ -831,6 +846,12 @@ a {
   backdrop-filter: blur(15px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   color: white;
+}
+
+.card_front,
+.card_back{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .card_back{
@@ -1051,6 +1072,7 @@ a {
 .projekte_container.show .projekt_card{
     opacity:1;
     transform:translateY(0);
+    
 }
 
 .projekte_container.show .projekt_card:nth-child(1){
